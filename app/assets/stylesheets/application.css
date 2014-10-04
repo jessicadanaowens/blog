@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require normalize-rails
+ *= require_tree .
+ *= require_self
+ */
+
+/* Box-sizing border-box */
+*, *:before, *:after {-mox-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+
+
+body {
+    font-family: 'Nunito', serif;
+}
+
+.box {
+    flex: 3;
+    color: #34495e;
+    font-size: 1.0em;
+    text-align: center;
+    min-height: 50px;
+    min-width: 25%;
+    vertical-align: middle;
+    padding-top: 15px;
+    border-radius: 15px;
+}
+
+    .box-name { background: #34495e; color: #bdc3c7; min-width: 350px; font-size: 3.0em;}
+    .box-title { background: #34495e; color: #bdc3c7; min-width: 300px; vertical-align: middle; border: medium solid #34495e; font-size: 1.5em; padding-top: 25px;}
+    .box-github { background: #1abc9c; border: medium solid #34495e;}
+    .box-twitter { background: #f1c40f; border: medium solid #34495e; }
+    .box-linked-in {background: #e67e22; border: medium solid #34495e;}
+    .box-production-code {background: #e74c3c; border: medium solid #34495e;}
+    .box-personal-project {background: #bdc3c7; border: medium solid #34495e;}
+    .box-blog {background: #2ecc71; border: medium solid #34495e;}
+    .box-gray-line {background: #34495e; min-width: 100%; height: 10px;}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #34495e;
+    border: medium solid #34495e;
+
+}
+
+.title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body {
+    background: #bdc3c7;
+}
+
+
